@@ -1,0 +1,27 @@
+.example-card {
+    max-width: 400px;
+}
+
+.card-story {
+    margin: 10px;
+    background-color: rgb(243, 241, 245);
+    height: 100%;
+}
+
+.mat-card-title {
+    font-size: 15px !important;
+}
+
+.card-loading {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96px;
+    padding: auto;
+}
+
+.card-story-link {
+    padding: 0;
+}

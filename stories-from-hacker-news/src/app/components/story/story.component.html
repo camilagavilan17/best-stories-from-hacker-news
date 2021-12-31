@@ -1,0 +1,13 @@
+<mat-card class="card-story">
+    <div *ngIf="!isStoryEmpty()">
+        <mat-card-title class="card-story-title">
+            <a *ngIf="story.type == 'story'" class="card-story-link" mat-button href="{{story.url}}" target="_blank"> Title: {{story.title}} </a>
+            <div *ngIf="isStoryEmpty()"> Title: {{story.title}} </div>
+        </mat-card-title>
+        <mat-card-subtitle> {{story.score}} points by {{story.by}} - Creation date: {{story.time * 1000 | date:'yyyy-MM-dd HH:mm:ss'}} </mat-card-subtitle>
+        <mat-card-content> Type: {{story.type}} </mat-card-content>
+    </div>
+    <div *ngIf="isStoryEmpty()" class="card-loading">
+        <mat-progress-bar mode="buffer"></mat-progress-bar>
+    </div>
+</mat-card>

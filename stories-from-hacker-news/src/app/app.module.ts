@@ -10,8 +10,8 @@ import { SharedModule } from './components/shared/shared.module';
 import { HeaderComponent } from './components/header/header.component';
 import { BestStoriesComponent } from './components/best-stories/best-stories.component';
 import { TopStoriesComponent } from './components/top-stories/top-stories.component';
-import { StorieComponent } from './components/storie/storie.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { StoryComponent } from './components/story/story.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HeaderComponent,
     BestStoriesComponent,
     TopStoriesComponent,
-    StorieComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,
